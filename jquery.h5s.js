@@ -1,5 +1,7 @@
 /*
  * HTML5 Sortable jQuery Plugin
+ * Fork by: Angelo Perera
+ * Derived from:
  * http://farhadi.ir/projects/html5sortable
  *
  * Copyright 2012, Ali Farhadi
@@ -7,7 +9,7 @@
  */
 (function($) {
 var dragging, placeholders = $();
-$.fn.sortable = function(options) {
+$.fn.h5s = function(options) {
 	var method = String(options);
 	options = $.extend({
 		connectWith: false
