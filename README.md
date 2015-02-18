@@ -22,14 +22,14 @@ Usage
 Use `sortable` method to create a sortable list:
 
 ``` javascript
-$('.sortable').sortable();
+$('.sortable').h5s();
 ```
 Use `.sortable-dragging` and `.sortable-placeholder` CSS selectors to change the styles of a dragging item and its placeholder respectively.
 
 Use `sortupdate` event if you want to do something when the order changes (e.g. storing the new order):
 
 ``` javascript
-$('.sortable').sortable().bind('sortupdate', function(e, ui) {
+$('.sortable').h5s().bind('sortupdate', function(e, ui) {
     //ui.item contains the current dragged element.
     //Triggered when the user stopped sorting and the DOM position has changed.
 });
@@ -38,21 +38,21 @@ $('.sortable').sortable().bind('sortupdate', function(e, ui) {
 Use `items` option to specifiy which items inside the element should be sortable:
 
 ``` javascript
-$('.sortable').sortable({
+$('.sortable').h5s({
     items: ':not(.disabled)'
 });
 ```
 Use `handle` option to restrict drag start to the specified element:
 
 ``` javascript
-$('.sortable').sortable({
+$('.sortable').h5s({
     handle: 'h2'
 });
 ```
 Setting `forcePlaceholderSize` option to true, forces the placeholder to have a height:
 
 ``` javascript
-$('.sortable').sortable({
+$('.sortable').h5s({
     forcePlaceholderSize: true 
 });
 ```
@@ -60,7 +60,7 @@ $('.sortable').sortable({
 Use `connectWith` option to create connected lists:
 
 ``` javascript
-$('#sortable1, #sortable2').sortable({
+$('#sortable1, #sortable2').h5s({
     connectWith: '.connected'
 });
 ```
@@ -68,19 +68,19 @@ $('#sortable1, #sortable2').sortable({
 To remove the sortable functionality completely:
 
 ``` javascript
-$('.sortable').sortable('destroy');
+$('.sortable').h5s('destroy');
 ```
 
 To disable the sortable temporarily:
 
 ``` javascript
-$('.sortable').sortable('disable');
+$('.sortable').h5s('disable');
 ```
 
 To enable a disabled sortable:
 
 ``` javascript
-$('.sortable').sortable('enable');
+$('.sortable').h5s('enable');
 ```
 
 The API is compatible with jquery-ui. So you can use jquery-ui as a polyfill in older browsers:
@@ -91,7 +91,7 @@ yepnope({
     yep: 'jquery.sortable.js',
     nope: 'jquery-ui.min.js',
     complete: function() {
-        $('.sortable').sortable().bind('sortupdate', function(e, ui) {
+        $('.sortable').h5s().bind('sortupdate', function(e, ui) {
             //Store the new order.
         }
     }
