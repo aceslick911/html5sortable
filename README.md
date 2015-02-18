@@ -1,6 +1,8 @@
-This project is not mantained anymore. For an updated version please use [voidberg's fork](https://github.com/voidberg/html5sortable).
+HTML5 DragAndDrop jQuery Plugin
 
-HTML5 Sortable jQuery Plugin
+Additional Aims:
+- Cross tab support
+
 ============================
 
 **[Demos & Documentation](http://farhadi.ir/projects/html5sortable)**
