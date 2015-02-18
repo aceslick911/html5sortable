@@ -83,21 +83,6 @@ To enable a disabled sortable:
 $('.sortable').h5s('enable');
 ```
 
-The API is compatible with jquery-ui. So you can use jquery-ui as a polyfill in older browsers:
-
-``` javascript
-yepnope({
-    test: Modernizr.draganddrop,
-    yep: 'jquery.sortable.js',
-    nope: 'jquery-ui.min.js',
-    complete: function() {
-        $('.sortable').h5s().bind('sortupdate', function(e, ui) {
-            //Store the new order.
-        }
-    }
-});
-```
-
 License
 -------
 Released under the MIT license.
