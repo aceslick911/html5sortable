@@ -1,11 +1,13 @@
 HTML5 DragAndDrop jQuery Plugin
+----
 
 Additional Aims:
 - Cross tab support
 
 ============================
 
-**[Demos & Documentation](http://farhadi.ir/projects/html5sortable)**
+Demo Fiddle:
+http://jsfiddle.net/aceslick911/ku1fbdeh/
 
 Features
 --------
